@@ -1,0 +1,212 @@
+@import "tailwindcss";
+
+/* ─── Brand design tokens ─────────────────────────────────────────────────── */
+
+:root {
+  /* Colors */
+  --color-slate-blue:   #1F2E3D;
+  --color-slate-blue-2: #2A3D50;
+  --color-slate-80:     #3D4D5E;
+  --color-slate-60:     #6B7785;
+  --color-slate-30:     #C5CCD3;
+  --color-gold:         #C9A86A;
+  --color-gold-hover:   #B8965A;
+  --color-cream:        #FAF7F2;
+  --color-blue-tint:    #E8EDF2;
+  --color-white:        #FFFFFF;
+  --color-error:        #A6453F;
+
+  /* Max widths */
+  --max-content: 1200px;
+  --max-reading: 680px;
+  --max-wide:    1080px;
+}
+
+/* ─── Tailwind v4 theme ───────────────────────────────────────────────────── */
+
+@theme {
+  /* Colors */
+  --color-slate-blue:   #1F2E3D;
+  --color-slate-blue-2: #2A3D50;
+  --color-slate-80:     #3D4D5E;
+  --color-slate-60:     #6B7785;
+  --color-slate-30:     #C5CCD3;
+  --color-gold:         #C9A86A;
+  --color-gold-hover:   #B8965A;
+  --color-cream:        #FAF7F2;
+  --color-blue-tint:    #E8EDF2;
+  --color-error:        #A6453F;
+
+  /* Typography — set by next/font, referenced here as fallbacks */
+  --font-display: 'Cormorant Garamond', 'Garamond', Georgia, serif;
+  --font-body:    'EB Garamond', 'Garamond', Georgia, serif;
+
+  /* Max widths */
+  --max-width-reading: 680px;
+  --max-width-wide:    1080px;
+  --max-width-content: 1200px;
+}
+
+/* ─── Base styles ─────────────────────────────────────────────────────────── */
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-slate-80);
+  font-family: var(--font-body);
+  line-height: 1.7;
+}
+
+/* ─── Typography scale ────────────────────────────────────────────────────── */
+
+.display-1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.875rem, 6vw, 4.5rem);
+  line-height: 1.05;
+  font-weight: 500;
+}
+
+.display-2 {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+h1, .h1 {
+  font-family: var(--font-display);
+  font-size: clamp(1.875rem, 3.5vw, 2.75rem);
+  line-height: 1.15;
+  font-weight: 500;
+}
+
+h2, .h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 2.5vw, 2.125rem);
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+h3, .h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+h4, .h4 {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.body-lg {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.body {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.body-sm {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+/* ─── Reading column ──────────────────────────────────────────────────────── */
+
+.reading-col {
+  max-width: var(--max-reading);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ─── Gold bullet list ────────────────────────────────────────────────────── */
+
+.bullet-list {
+  list-style: none;
+  padding: 0;
+}
+
+.bullet-list li {
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.bullet-list li::before {
+  content: '■';
+  font-size: 0.25rem;
+  color: var(--color-gold);
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+}
+
+/* ─── Scroll reveal ───────────────────────────────────────────────────────── */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ─── Focus states ────────────────────────────────────────────────────────── */
+
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+/* ─── Skip to content ─────────────────────────────────────────────────────── */
+
+.skip-to-content {
+  position: fixed;
+  top: -100%;
+  left: 1rem;
+  z-index: 9999;
+  padding: 0.75rem 1.25rem;
+  background: var(--color-slate-blue);
+  color: var(--color-cream);
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  transition: top 200ms;
+}
+
+.skip-to-content:focus {
+  top: 1rem;
+}
