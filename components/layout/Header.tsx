@@ -40,7 +40,7 @@ export default function Header() {
         <div className="max-w-[1200px] mx-auto px-8 md:px-8 px-4 h-full flex items-center justify-between">
           {/* Logo */}
           <div className="hidden md:block">
-            <Logo variant="header-desktop" />
+            <Logo variant="header-desktop" scrolled={scrolled || pathname !== "/"} />
           </div>
           <div className="md:hidden">
             <Logo variant="header-mobile" />
@@ -53,12 +53,16 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 className={`
-                  font-body font-medium text-base text-slate-80 relative pb-1
-                  transition-colors duration-[250ms] hover:text-slate-blue
+                  font-body font-medium text-base relative pb-1
+                  transition-colors duration-[250ms]
                   after:absolute after:bottom-0 after:left-0 after:h-[1px] after:bg-gold
                   after:transition-all after:duration-[250ms]
+                  ${scrolled || pathname !== "/"
+                    ? "text-slate-80 hover:text-slate-blue"
+                    : "text-white/90 hover:text-white"
+                  }
                   ${pathname === link.href
-                    ? "text-slate-blue after:w-full"
+                    ? "after:w-full"
                     : "after:w-0 hover:after:w-full"
                   }
                 `}
