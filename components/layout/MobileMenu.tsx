@@ -2,7 +2,6 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 const navLinks = [
   { label: "The Institute", href: "/about-the-institute" },
@@ -60,15 +59,16 @@ export default function MobileMenu({ isOpen, onClose, currentPath }: MobileMenuP
         </svg>
       </button>
 
-      {/* Icon mark */}
-      <div className="mb-10">
-        <Image
-          src="/logos/icon-mark-option-1.png"
-          alt="Institute for Conscious Transformation"
-          width={56}
-          height={56}
-          className="object-contain brightness-0 invert"
-        />
+      {/* Wordmark */}
+      <div className="mb-10 text-center">
+        <Link href="/" onClick={onClose} aria-label="Institute for Conscious Transformation — Home">
+          <span
+            className="text-cream font-medium leading-tight"
+            style={{ fontFamily: "var(--font-display)", fontSize: "0.875rem" }}
+          >
+            Institute <em>for</em> Conscious Transformation
+          </span>
+        </Link>
       </div>
 
       {/* Nav links */}
