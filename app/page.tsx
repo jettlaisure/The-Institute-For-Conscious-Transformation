@@ -8,7 +8,6 @@ import Eyebrow from "@/components/ui/Eyebrow";
 import Card from "@/components/ui/Card";
 import PullQuote from "@/components/ui/PullQuote";
 import ScrollReveal from "@/components/ui/ScrollReveal";
-import NewsletterSignup from "@/components/forms/NewsletterSignup";
 import InterestListModal from "@/components/forms/InterestListModal";
 
 const pillars = [
@@ -251,24 +250,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Section 6: Newsletter ─────────────────────────────────────────── */}
-      <section className="bg-cream py-24">
-        <div className="max-w-[560px] mx-auto px-4 md:px-8 text-center">
-          <ScrollReveal>
-            <h2
-              className="h2 text-slate-blue mb-4"
-              style={{ fontFamily: "var(--font-display)" }}
-            >
-              Stay connected.
-            </h2>
-            <p className="body text-slate-80 mb-8">
-              Receive reflections on conscious development, occasional updates on
-              programs, and early access to <em>Ending with Awareness</em>.
-            </p>
-            <NewsletterSignup variant="hero" />
-          </ScrollReveal>
-        </div>
-      </section>
 
       <InterestListModal
         isOpen={modalOpen}

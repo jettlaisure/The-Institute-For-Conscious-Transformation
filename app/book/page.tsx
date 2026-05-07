@@ -6,7 +6,6 @@ import Link from "next/link";
 import Eyebrow from "@/components/ui/Eyebrow";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import Button from "@/components/ui/Button";
-import NewsletterSignup from "@/components/forms/NewsletterSignup";
 import InterestListModal from "@/components/forms/InterestListModal";
 
 export default function BookPage() {
@@ -179,8 +178,7 @@ export default function BookPage() {
               If you&#39;d like updates, early access opportunities, or to explore speaking
               engagements or affiliate partnerships, we&#39;d love to connect.
             </p>
-            <NewsletterSignup variant="hero" />
-            <div className="flex flex-wrap justify-center gap-3 mt-8 items-center">
+            <div className="flex flex-wrap justify-center gap-3 items-center">
               <Link
                 href="/contact?topic=speaking"
                 className="body-sm text-slate-blue underline decoration-gold decoration-1 underline-offset-4 hover:decoration-2 transition-all duration-[250ms]"
