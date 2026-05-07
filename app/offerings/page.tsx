@@ -8,7 +8,7 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 import Button from "@/components/ui/Button";
 import InterestListModal from "@/components/forms/InterestListModal";
 
-export default function ProgramsPage() {
+export default function OfferingsPage() {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
@@ -234,10 +234,10 @@ export default function ProgramsPage() {
         <div className="text-center px-4">
           <ScrollReveal>
             <Link
-              href="/contact?topic=programs"
+              href="/contact?topic=offerings"
               className="body text-slate-blue underline decoration-gold decoration-1 underline-offset-4 hover:decoration-2 transition-all duration-[250ms]"
             >
-              Have a question about programs? Get in touch →
+              Have a question about our offerings? Get in touch →
             </Link>
           </ScrollReveal>
         </div>
@@ -246,7 +246,7 @@ export default function ProgramsPage() {
       <InterestListModal
         isOpen={modalOpen}
         onClose={() => setModalOpen(false)}
-        origin="programs"
+        origin="offerings"
       />
     </>
   );

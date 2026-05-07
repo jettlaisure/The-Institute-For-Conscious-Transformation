@@ -269,7 +269,7 @@ export default function AboutInstitutePage() {
             <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-16">
               {[
                 { label: "Meet the Founder", href: "/about-the-founder" },
-                { label: "Explore Programs", href: "/programs" },
+                { label: "Explore Offerings", href: "/offerings" },
                 { label: "Read about the Book", href: "/book" },
               ].map((link) => (
                 <Link

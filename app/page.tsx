@@ -70,14 +70,14 @@ export default function HomePage() {
           </ScrollReveal>
           <ScrollReveal delay={100}>
             <h1
-              className="display-1 text-white max-w-[800px] mb-6"
+              className="display-1 text-slate-blue max-w-[800px] mb-6"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Where consciousness meets development.
             </h1>
           </ScrollReveal>
           <ScrollReveal delay={200}>
-            <p className="body-lg text-white/90 max-w-[640px] mb-10">
+            <p className="body-lg text-slate-80 max-w-[640px] mb-10">
               A grounded, integrative pathway through life&#39;s most pivotal
               transitions — bridging developmental psychology, somatic
               intelligence, and conscious evolution.
@@ -88,8 +88,8 @@ export default function HomePage() {
               <Button variant="primary" href="/about-the-institute">
                 Explore the Institute
               </Button>
-              <Button variant="ghost-white" href="/about-the-founder">
-                Meet the Founder
+              <Button variant="primary" href="/offerings">
+                See our Offerings
               </Button>
             </div>
           </ScrollReveal>

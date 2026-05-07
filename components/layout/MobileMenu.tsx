@@ -6,7 +6,7 @@ import Link from "next/link";
 const navLinks = [
   { label: "The Institute", href: "/about-the-institute" },
   { label: "Founder", href: "/about-the-founder" },
-  { label: "Programs", href: "/programs" },
+  { label: "Offerings", href: "/offerings" },
   { label: "The Book", href: "/book" },
   { label: "Community", href: "/community" },
   { label: "Contact", href: "/contact" },

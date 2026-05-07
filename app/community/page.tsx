@@ -117,7 +117,7 @@ export default function CommunityPage() {
             </h3>
             <p className="body-lg italic text-slate-60 mb-6">Coming soon.</p>
             <Link
-              href="/contact?topic=programs"
+              href="/contact?topic=offerings"
               className="body-sm text-slate-blue underline decoration-gold decoration-1 underline-offset-4 hover:decoration-2 transition-all duration-[250ms]"
             >
               Be notified when events are announced →

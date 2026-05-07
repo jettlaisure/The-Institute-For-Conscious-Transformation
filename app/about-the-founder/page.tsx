@@ -26,10 +26,10 @@ const ctaCards = [
     href: "/contact?topic=advisory",
   },
   {
-    eyebrow: "INSTITUTE PROGRAMS",
+    eyebrow: "INSTITUTE OFFERINGS",
     title: "Explore offerings",
     body: "Programs and integrative practices for ongoing development.",
-    href: "/programs",
+    href: "/offerings",
   },
   {
     eyebrow: "SPEAKING & COLLABORATION",

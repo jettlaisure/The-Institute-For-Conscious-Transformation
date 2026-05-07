@@ -10,7 +10,7 @@ const col1 = [
 ];
 
 const col2 = [
-  { label: "Programs", href: "/programs" },
+  { label: "Offerings", href: "/offerings" },
   { label: "The Book", href: "/book" },
   { label: "Community", href: "/community" },
   { label: "Affiliates", href: "/community#affiliates" },

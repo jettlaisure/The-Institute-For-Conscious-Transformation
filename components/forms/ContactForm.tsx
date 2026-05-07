@@ -6,7 +6,7 @@ import { useSearchParams } from "next/navigation";
 const TOPICS = [
   { value: "", label: "Select a topic" },
   { value: "general", label: "General inquiry" },
-  { value: "programs", label: "Programs" },
+  { value: "offerings", label: "Offerings" },
   { value: "pilot-study", label: "Pilot Study" },
   { value: "practices", label: "Practices" },
   { value: "speaking", label: "Speaking & Media" },
@@ -17,7 +17,7 @@ const TOPICS = [
 
 const TOPIC_MAP: Record<string, string> = {
   general: "General inquiry",
-  programs: "Programs",
+  offerings: "Offerings",
   "pilot-study": "Pilot Study",
   practices: "Practices",
   speaking: "Speaking & Media",

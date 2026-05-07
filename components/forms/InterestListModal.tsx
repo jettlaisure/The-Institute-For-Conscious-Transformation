@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 
-type ModalOrigin = "home" | "book" | "programs";
+type ModalOrigin = "home" | "book" | "offerings";
 
 interface InterestListModalProps {
   isOpen: boolean;
@@ -23,7 +23,7 @@ export default function InterestListModal({
 
   const bookFormId = process.env.NEXT_PUBLIC_CONVERTKIT_BOOK_INTEREST_FORM_ID;
   const foundationsFormId = process.env.NEXT_PUBLIC_CONVERTKIT_FOUNDATIONS_FORM_ID;
-  const formId = origin === "programs" ? foundationsFormId : bookFormId;
+  const formId = origin === "offerings" ? foundationsFormId : bookFormId;
 
   useEffect(() => {
     if (!isOpen) return;
