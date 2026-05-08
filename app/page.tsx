@@ -63,6 +63,13 @@ export default function HomePage() {
 
         <div className="absolute inset-0 flex flex-col items-center justify-center px-4 md:px-8 text-center">
           <ScrollReveal>
+            <Image
+              src="/logos/icon-mark.png"
+              alt="Institute for Conscious Transformation"
+              width={159}
+              height={159}
+              className="mx-auto mb-6 object-contain"
+            />
             <p className="eyebrow mb-6" style={{ color: "#C9A86A" }}>
               INSTITUTE FOR CONSCIOUS TRANSFORMATION
             </p>

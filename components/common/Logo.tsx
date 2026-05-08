@@ -13,12 +13,11 @@ export default function Logo({ variant = "header-desktop", scrolled }: LogoProps
     return (
       <Link href="/" aria-label="Institute for Conscious Transformation — Home">
         <Image
-          src="/logos/icon-mark-option-1.png"
+          src="/logos/icon-mark.png"
           alt="Institute for Conscious Transformation"
-          width={40}
-          height={40}
+          width={52}
+          height={52}
           className="object-contain"
-          style={{ mixBlendMode: "multiply" }}
           priority
         />
       </Link>
@@ -63,12 +62,11 @@ export default function Logo({ variant = "header-desktop", scrolled }: LogoProps
       className="flex items-center gap-3"
     >
       <Image
-        src="/logos/icon-mark-option-1.png"
+        src="/logos/icon-mark.png"
         alt=""
-        width={44}
-        height={44}
+        width={60}
+        height={60}
         className="object-contain flex-shrink-0"
-        style={{ mixBlendMode: "multiply" }}
         priority
       />
       <span
