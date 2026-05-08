@@ -32,20 +32,24 @@ export default function OfferingsPage() {
         />
         <div className="relative z-10 px-4 md:px-8 pt-20">
           <ScrollReveal>
-            <Eyebrow style={{ color: "#C9A86A" } as React.CSSProperties}>
+            <Eyebrow style={{ color: "#F5D48A", textShadow: "0 0 12px rgba(0,0,0,0.9), 0 2px 16px rgba(0,0,0,0.8)" } as React.CSSProperties}>
               PROGRAMS &amp; OFFERINGS
             </Eyebrow>
             <h1
               className="display-2 text-white max-w-[760px] mt-2 mb-6"
-              style={{ fontFamily: "var(--font-display)" }}
+              style={{ fontFamily: "var(--font-display)", textShadow: "0 2px 12px rgba(0,0,0,0.6)" }}
             >
               Programs for conscious development and identity evolution.
             </h1>
-            <p className="body-lg text-white/90 max-w-[720px] mx-auto mb-4">
+            <p className="body-lg text-white max-w-[720px] mx-auto mb-4"
+              style={{ textShadow: "0 1px 8px rgba(0,0,0,0.6)" }}
+            >
               Guided pathways that integrate psychology, somatic intelligence, and
               awareness-based practice to support deep, lasting transformation.
             </p>
-            <p className="body italic text-white/80 max-w-[680px] mx-auto">
+            <p className="body italic text-white max-w-[680px] mx-auto"
+              style={{ textShadow: "0 1px 8px rgba(0,0,0,0.6)" }}
+            >
               Each program is designed as a developmental journey — structured, experiential,
               and grounded in the architecture of human growth.
             </p>

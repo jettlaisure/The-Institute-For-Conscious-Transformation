@@ -111,21 +111,23 @@ export default function AboutInstitutePage() {
         />
         <div
           className="absolute inset-0"
-          style={{ background: "rgba(31,46,61,0.15)" }}
+          style={{ background: "rgba(31,46,61,0.40)" }}
           aria-hidden="true"
         />
         <div className="relative z-10 max-w-[1200px] mx-auto px-4 md:px-8 w-full pt-20">
           <ScrollReveal>
-            <Eyebrow className="text-cream" style={{ color: "#C9A86A" } as React.CSSProperties}>
+            <Eyebrow className="text-cream" style={{ color: "#F5D48A", textShadow: "0 0 12px rgba(0,0,0,0.9), 0 2px 16px rgba(0,0,0,0.8)" } as React.CSSProperties}>
               THE INSTITUTE
             </Eyebrow>
             <h1
               className="display-2 text-white max-w-[760px] mt-2"
-              style={{ fontFamily: "var(--font-display)" }}
+              style={{ fontFamily: "var(--font-display)", textShadow: "0 2px 12px rgba(0,0,0,0.6)" }}
             >
               The Architecture of Transformation — Where Identity Evolves Into Conscious Development.
             </h1>
-            <p className="body-lg text-white/90 max-w-[640px] mt-6">
+            <p className="body-lg text-white max-w-[640px] mt-6"
+              style={{ textShadow: "0 1px 8px rgba(0,0,0,0.6)" }}
+            >
               The Institute for Conscious Transformation integrates developmental psychology,
               cognitive sciences, mindfulness, and embodied practice to cultivate inner
               coherence and authentic growth.
@@ -230,6 +232,17 @@ export default function AboutInstitutePage() {
           </div>
         </div>
       </section>
+
+      {/* ── Section 4b: Atmospheric image break ──────────────────────────── */}
+      <div className="w-full overflow-hidden" style={{ height: "480px" }}>
+        <Image
+          src="/images/institute-glass-atrium.jpeg"
+          alt="A bright glass atrium interior with natural light."
+          width={1920}
+          height={480}
+          className="w-full h-full object-cover"
+        />
+      </div>
 
       {/* ── Section 5: Vision ─────────────────────────────────────────────── */}
       <section className="bg-cream py-24" id="vision">

@@ -32,7 +32,7 @@ export default function CommunityPage() {
         />
         <div className="relative z-10 px-4 md:px-8 pt-20 max-w-[800px] mx-auto">
           <ScrollReveal>
-            <Eyebrow style={{ color: "#C9A86A" } as React.CSSProperties}>COMMUNITY</Eyebrow>
+            <Eyebrow style={{ color: "#F5D48A", textShadow: "0 0 12px rgba(0,0,0,0.9), 0 2px 16px rgba(0,0,0,0.8)" } as React.CSSProperties}>COMMUNITY</Eyebrow>
             <h1
               className="display-2 text-slate-blue mt-2 mb-6"
               style={{ fontFamily: "var(--font-display)" }}

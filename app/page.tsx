@@ -70,7 +70,7 @@ export default function HomePage() {
               height={159}
               className="mx-auto mb-6 object-contain"
             />
-            <p className="eyebrow mb-6" style={{ color: "#C9A86A" }}>
+            <p className="eyebrow mb-6" style={{ color: "#C9A86A", textShadow: "0 1px 4px rgba(0,0,0,0.2)" }}>
               INSTITUTE FOR CONSCIOUS TRANSFORMATION
             </p>
           </ScrollReveal>

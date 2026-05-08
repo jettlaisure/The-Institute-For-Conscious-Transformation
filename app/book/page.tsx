@@ -27,32 +27,34 @@ export default function BookPage() {
         />
         <div
           className="absolute inset-0"
-          style={{ background: "rgba(31,46,61,0.25)" }}
+          style={{ background: "rgba(250,247,242,0.08)" }}
           aria-hidden="true"
         />
         <div className="relative z-10 px-4 md:px-8 pt-20">
           <ScrollReveal>
-            <Eyebrow style={{ color: "#C9A86A" } as React.CSSProperties}>
+            <Eyebrow style={{ color: "#F5D48A", textShadow: "0 0 12px rgba(0,0,0,0.9), 0 2px 16px rgba(0,0,0,0.8)" } as React.CSSProperties}>
               FORTHCOMING BOOK
             </Eyebrow>
             <h1
-              className="display-1 text-white max-w-[720px] mx-auto mt-2 mb-6"
-              style={{ fontFamily: "var(--font-display)" }}
+              className="display-1 text-slate-blue max-w-[720px] mx-auto mt-2 mb-6"
+              style={{ fontFamily: "var(--font-display)", textShadow: "0 0 12px rgba(255,255,255,0.6), 0 2px 6px rgba(255,255,255,0.4)" }}
             >
               Ending with <em>Awareness</em>
             </h1>
-            <p className="body-lg text-white/90 max-w-[640px] mx-auto mb-10">
+            <p className="body-lg text-slate-80 max-w-[640px] mx-auto mb-10"
+              style={{ textShadow: "0 0 10px rgba(255,255,255,0.55), 0 2px 4px rgba(255,255,255,0.35)" }}
+            >
               A book for anyone navigating endings, identity shifts, and the emergence of
               their next self.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
-              <Button variant="ghost-white" onClick={() => setModalOpen(true)}>
+              <Button variant="primary" onClick={() => setModalOpen(true)}>
                 Get updates
               </Button>
-              <Button variant="ghost-white" href="/contact?topic=speaking">
+              <Button variant="primary" href="/contact?topic=speaking">
                 Speaking &amp; collaboration
               </Button>
-              <Button variant="ghost-white" href="/contact?topic=affiliate">
+              <Button variant="primary" href="/contact?topic=affiliate">
                 Affiliate partnerships
               </Button>
             </div>
