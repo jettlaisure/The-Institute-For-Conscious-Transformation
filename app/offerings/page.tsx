@@ -37,18 +37,18 @@ export default function OfferingsPage() {
             </Eyebrow>
             <h1
               className="display-2 text-white max-w-[760px] mt-2 mb-6"
-              style={{ fontFamily: "var(--font-display)", textShadow: "0 2px 12px rgba(0,0,0,0.6)" }}
+              style={{ fontFamily: "var(--font-display)", textShadow: "0 2px 16px rgba(0,0,0,0.9), 0 4px 32px rgba(0,0,0,0.7)" }}
             >
               Programs for conscious development and identity evolution.
             </h1>
             <p className="body-lg text-white max-w-[720px] mx-auto mb-4"
-              style={{ textShadow: "0 1px 8px rgba(0,0,0,0.6)" }}
+              style={{ textShadow: "0 1px 12px rgba(0,0,0,0.9), 0 2px 20px rgba(0,0,0,0.7)" }}
             >
               Guided pathways that integrate psychology, somatic intelligence, and
               awareness-based practice to support deep, lasting transformation.
             </p>
             <p className="body italic text-white max-w-[680px] mx-auto"
-              style={{ textShadow: "0 1px 8px rgba(0,0,0,0.6)" }}
+              style={{ textShadow: "0 1px 12px rgba(0,0,0,0.9), 0 2px 20px rgba(0,0,0,0.7)" }}
             >
               Each program is designed as a developmental journey — structured, experiential,
               and grounded in the architecture of human growth.

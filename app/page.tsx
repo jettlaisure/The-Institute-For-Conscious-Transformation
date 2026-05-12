@@ -70,20 +70,22 @@ export default function HomePage() {
               height={159}
               className="mx-auto mb-6 object-contain"
             />
-            <p className="eyebrow mb-6" style={{ color: "#C9A86A", textShadow: "0 1px 4px rgba(0,0,0,0.2)" }}>
+            <p className="eyebrow mb-6" style={{ color: "#C9A86A", textShadow: "0 0 10px rgba(255,255,255,0.9), 0 1px 4px rgba(0,0,0,0.15)" }}>
               INSTITUTE FOR CONSCIOUS TRANSFORMATION
             </p>
           </ScrollReveal>
           <ScrollReveal delay={100}>
             <h1
               className="display-1 text-slate-blue max-w-[800px] mb-6"
-              style={{ fontFamily: "var(--font-display)" }}
+              style={{ fontFamily: "var(--font-display)", textShadow: "0 0 16px rgba(255,255,255,0.8), 0 2px 8px rgba(255,255,255,0.6)" }}
             >
               Where consciousness meets development.
             </h1>
           </ScrollReveal>
           <ScrollReveal delay={200}>
-            <p className="body-lg text-slate-80 max-w-[640px] mb-10">
+            <p className="body-lg text-slate-80 max-w-[640px] mb-10"
+              style={{ textShadow: "0 0 12px rgba(255,255,255,0.8), 0 2px 6px rgba(255,255,255,0.6)" }}
+            >
               A grounded, integrative pathway through life&#39;s most pivotal
               transitions — bridging developmental psychology, somatic
               intelligence, and conscious evolution.

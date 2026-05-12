@@ -27,23 +27,27 @@ export default function CommunityPage() {
         />
         <div
           className="absolute inset-0"
-          style={{ background: "rgba(250,247,242,0.08)" }}
+          style={{ background: "rgba(250,247,242,0.42)" }}
           aria-hidden="true"
         />
         <div className="relative z-10 px-4 md:px-8 pt-20 max-w-[800px] mx-auto">
           <ScrollReveal>
-            <Eyebrow style={{ color: "#F5D48A", textShadow: "0 0 12px rgba(0,0,0,0.9), 0 2px 16px rgba(0,0,0,0.8)" } as React.CSSProperties}>COMMUNITY</Eyebrow>
+            <Eyebrow style={{ color: "#B8860B", fontWeight: 700, textShadow: "0 0 10px rgba(255,255,255,0.9), 0 1px 4px rgba(0,0,0,0.15)" } as React.CSSProperties}>COMMUNITY</Eyebrow>
             <h1
               className="display-2 text-slate-blue mt-2 mb-6"
-              style={{ fontFamily: "var(--font-display)" }}
+              style={{ fontFamily: "var(--font-display)", textShadow: "0 0 16px rgba(255,255,255,0.8), 0 2px 8px rgba(255,255,255,0.6)" }}
             >
               A community for conscious evolution.
             </h1>
-            <p className="body-lg text-slate-80 max-w-[720px] mx-auto mb-3">
+            <p className="body-lg text-slate-blue max-w-[720px] mx-auto mb-3"
+              style={{ fontSize: "1.25rem", fontWeight: 800, textShadow: "0 0 12px rgba(255,255,255,0.8), 0 2px 6px rgba(255,255,255,0.6)" }}
+            >
               A global field of individuals, practitioners, and scholars committed to deep
               development, relational coherence, and meaningful transformation.
             </p>
-            <p className="body italic text-slate-60 max-w-[600px] mx-auto">
+            <p className="body italic text-slate-blue max-w-[600px] mx-auto"
+              style={{ fontSize: "1.125rem", fontWeight: 800, textShadow: "0 0 12px rgba(255,255,255,0.8), 0 2px 6px rgba(255,255,255,0.6)" }}
+            >
               Where growth becomes shared, embodied, and amplified.
             </p>
           </ScrollReveal>
@@ -92,17 +96,21 @@ export default function CommunityPage() {
                 inspire, or an organization striving for excellence, we&#39;re here to support
                 you every step of the way.
               </p>
-              {/* TODO: Replace # with real Converging Zone URL when available (PRD Appendix B) */}
-              <Link
-                href="#"
-                className="body-sm text-slate-blue underline decoration-gold decoration-1 underline-offset-4 hover:decoration-2 transition-all duration-[250ms]"
-              >
-                Visit Converging Zone →
-              </Link>
             </Card>
           </ScrollReveal>
         </div>
       </section>
+
+      {/* ── Atmospheric image break ───────────────────────────────────────── */}
+      <div className="w-full overflow-hidden" style={{ height: "480px" }}>
+        <Image
+          src="/images/institute-library-interior.jpeg"
+          alt="A warmly lit library interior."
+          width={1920}
+          height={480}
+          className="w-full h-full object-cover"
+        />
+      </div>
 
       {/* ── Section 4: Webinars, Retreats & Events ───────────────────────── */}
       <section className="bg-blue-tint py-24">

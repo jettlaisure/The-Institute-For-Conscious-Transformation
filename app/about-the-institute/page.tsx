@@ -121,12 +121,12 @@ export default function AboutInstitutePage() {
             </Eyebrow>
             <h1
               className="display-2 text-white max-w-[760px] mt-2"
-              style={{ fontFamily: "var(--font-display)", textShadow: "0 2px 12px rgba(0,0,0,0.6)" }}
+              style={{ fontFamily: "var(--font-display)", textShadow: "0 2px 16px rgba(0,0,0,0.9), 0 4px 32px rgba(0,0,0,0.7)" }}
             >
               The Architecture of Transformation — Where Identity Evolves Into Conscious Development.
             </h1>
             <p className="body-lg text-white max-w-[640px] mt-6"
-              style={{ textShadow: "0 1px 8px rgba(0,0,0,0.6)" }}
+              style={{ textShadow: "0 1px 12px rgba(0,0,0,0.9), 0 2px 20px rgba(0,0,0,0.7)" }}
             >
               The Institute for Conscious Transformation integrates developmental psychology,
               cognitive sciences, mindfulness, and embodied practice to cultivate inner
