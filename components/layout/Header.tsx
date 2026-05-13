@@ -14,10 +14,17 @@ const navLinks = [
   { label: "Community", href: "/community" },
 ];
 
+// Pages whose hero is light-coloured — nav stays dark even when not scrolled
+const lightHeroPages = ["/", "/about-the-founder", "/community", "/contact"];
+
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
+  // Show cream background only when scrolled
+  const showBg = scrolled;
+  // Use dark text when scrolled OR on a light-hero page
+  const useDark = scrolled || lightHeroPages.includes(pathname);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 80);
@@ -31,7 +38,7 @@ export default function Header() {
         className={`
           fixed top-0 left-0 right-0 z-40 h-20 md:h-20 h-16
           transition-all duration-300
-          ${scrolled
+          ${showBg
             ? "bg-cream/95 backdrop-blur-sm shadow-[0_1px_0_rgba(31,46,61,0.08)]"
             : "bg-transparent"
           }
@@ -40,7 +47,7 @@ export default function Header() {
         <div className="max-w-[1200px] mx-auto px-8 md:px-8 px-4 h-full flex items-center justify-between">
           {/* Logo */}
           <div className="hidden md:block">
-            <Logo variant="header-desktop" scrolled={scrolled || pathname !== "/"} />
+            <Logo variant="header-desktop" scrolled={useDark} />
           </div>
           <div className="md:hidden">
             <Logo variant="header-mobile" />
@@ -57,7 +64,7 @@ export default function Header() {
                   transition-colors duration-[250ms]
                   after:absolute after:bottom-0 after:left-0 after:h-[1px] after:bg-gold
                   after:transition-all after:duration-[250ms]
-                  ${scrolled || pathname !== "/"
+                  ${useDark
                     ? "text-slate-80 hover:text-slate-blue"
                     : "text-white/90 hover:text-white"
                   }
@@ -79,7 +86,7 @@ export default function Header() {
               className={`
                 hidden md:inline-block border font-body font-medium text-sm tracking-wide px-5 py-2.5
                 transition-colors duration-[250ms]
-                ${scrolled || pathname !== "/"
+                ${useDark
                   ? "border-slate-blue text-slate-blue hover:bg-slate-blue hover:text-cream"
                   : "border-white text-white hover:bg-white hover:text-slate-blue"
                 }
@@ -97,7 +104,7 @@ export default function Header() {
               {[0, 1, 2].map((i) => (
                 <span
                   key={i}
-                  className={`block w-6 h-[1.5px] ${scrolled || pathname !== "/" ? "bg-slate-blue" : "bg-white"}`}
+                  className={`block w-6 h-[1.5px] ${useDark ? "bg-slate-blue" : "bg-white"}`}
                 />
               ))}
             </button>
